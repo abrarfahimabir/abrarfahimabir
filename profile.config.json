@@ -1,0 +1,17 @@
+{
+  "username": "abrarfahimabir",
+  "name": "Md. Abrar Fahim",
+  "role": "React & Django Developer",
+  "subtitle": "CSE student · Green University of Bangladesh",
+
+  "stack": {
+    "Frontend": ["react", "javascript", "html", "css", "tailwind", "bootstrap"],
+    "Backend": ["python", "django", "drf", "postgresql", "sqlite"],
+    "Tools": ["git", "github", "vercel"]
+  },
+
+  "activity": {
+    "exclude": ["abrarfahimabir"],
+    "recentRepos": 3
+  }
+}
