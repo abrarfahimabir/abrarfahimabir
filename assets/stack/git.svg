@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="90" height="40" viewBox="0 0 90 40" role="img" aria-label="Git">
-<rect x="0.5" y="0.5" width="89" height="39" rx="8" fill="#121d27" stroke="#344451"/>
-<g transform="translate(23 20) scale(0.54)"><g fill="none" stroke="#f5a98c" stroke-width="2.5">
-<path d="M-9-11L9 7M-4-6V11"/><circle cx="-9" cy="-11" r="3"/>
-<circle cx="9" cy="7" r="3"/><circle cx="-4" cy="11" r="3"/></g></g><text x="44" y="25" fill="#e7eef5" font-size="13" font-family="'DejaVu Sans', Arial, sans-serif" font-weight="500" letter-spacing="0" text-anchor="start">Git</text>
-</svg>
