@@ -1,0 +1,56 @@
+# Rebuilds the profile images and the generated README blocks.
+# Runs once a week, whenever profile.config.json or the build script changes,
+# and on demand from the Actions tab. It commits only when something changed.
+name: Update profile
+
+on:
+  schedule:
+    - cron: "17 3 * * 1" # Mondays 03:17 UTC (09:17 in Bangladesh)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - profile.config.json
+      - scripts/**
+      - .github/workflows/update-profile.yml
+
+# The job only needs to read public data and push the regenerated files.
+permissions:
+  contents: write
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      # If this step fails, the job stops here and nothing is committed,
+      # so the README on your profile stays as it was.
+      - name: Rebuild images and README blocks
+        run: node scripts/build-profile.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes, if any
+        run: |
+          git add README.md assets
+          if git diff --cached --quiet; then
+            echo "Nothing changed. No commit needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh profile images and activity"
+          git pull --rebase origin main
+          git push origin HEAD:main
