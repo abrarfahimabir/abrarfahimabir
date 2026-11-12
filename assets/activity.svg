@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="222" viewBox="0 0 1280 222" role="img" aria-labelledby="title desc">
+  <title id="title">Public code language mix</title><desc id="desc">JavaScript 48%, CSS 22%, Python 17%, HTML 13%. Code bytes, not proficiency. Checked 2026-11-12.</desc>
+  <defs><clipPath id="bar"><rect x="42" y="91" width="1196" height="17" rx="8.5"/></clipPath></defs>
+  <rect x="1" y="1" width="1278" height="220" rx="20" fill="#0b1320" stroke="#243145"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="42" y="45" font-size="15" letter-spacing="2" fill="#b8f780">PUBLIC CODE / LANGUAGE MIX</text>
+    <text x="1238" y="45" text-anchor="end" font-size="13" fill="#a1b0c8">12 Nov 2026 · UTC</text>
+    <rect x="42" y="91" width="1196" height="17" rx="8.5" fill="#243145"/>
+    <g clip-path="url(#bar)"><rect x="42.00" y="91" width="574.82" height="17" fill="#f0d771"/>
+<rect x="616.82" y="91" width="267.58" height="17" fill="#b4a5ff"/>
+<rect x="884.41" y="91" width="205.57" height="17" fill="#b8f780"/>
+<rect x="1089.98" y="91" width="148.02" height="17" fill="#eea882"/></g><circle cx="42" cy="147" r="4" fill="#f0d771"/>
+    <text x="56" y="152" font-size="15" fill="#edf3ff">JavaScript <tspan fill="#a1b0c8">48%</tspan></text>
+<circle cx="341" cy="147" r="4" fill="#b4a5ff"/>
+    <text x="355" y="152" font-size="15" fill="#edf3ff">CSS <tspan fill="#a1b0c8">22%</tspan></text>
+<circle cx="640" cy="147" r="4" fill="#b8f780"/>
+    <text x="654" y="152" font-size="15" fill="#edf3ff">Python <tspan fill="#a1b0c8">17%</tspan></text>
+<circle cx="939" cy="147" r="4" fill="#eea882"/>
+    <text x="953" y="152" font-size="15" fill="#edf3ff">HTML <tspan fill="#a1b0c8">13%</tspan></text>
+    <text x="42" y="192" font-size="13" fill="#8b9cb6">By code bytes across public repositories. Excludes forks, archived repos and this profile.</text>
+  </g>
+</svg>
